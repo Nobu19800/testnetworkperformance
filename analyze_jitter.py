@@ -57,7 +57,7 @@ if __name__ == '__main__':
                     resultlist[datasize] = {
                         "max": max_jitter, "min": min_jitter, "mean": mean, "list": jitterlist}
 
-            result_file = "result_"+address+"_"+maxsize+"_"+stepsize+".txt"
+            result_file = "result_"+address+"_"+minsize+"_"+maxsize+"_"+stepsize+".txt"
 
             jitterlistsize = 10000000
             with open(result_file, mode='w') as fw:
@@ -77,7 +77,7 @@ if __name__ == '__main__':
 
                         #print(k, i)
 
-            data_file = "result_"+address+"_"+maxsize + \
+            data_file = "result_"+address+"_"+minsize+"_"+maxsize + \
                         "_"+stepsize+"_datalist"+".txt"
             with open(data_file, mode='w') as fw_data:
                 fw_data.write(" , ")

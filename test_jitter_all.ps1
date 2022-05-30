@@ -4,7 +4,7 @@
 $MIN_SIZE = 1472
 $MAX_SIZE = 1472
 $STEP_SIZE = 1472
-$ONLY_ONCE = $true
+$ONLY_ONCE = $false
 $IP_ADDRESS = "8.8.8.8"
 $PING_MAX_COUNT = 2
 $LOG_DIR = "${PSScriptRoot}\test_${IP_ADDRESS}_${MIN_SIZE}_${MAX_SIZE}_${STEP_SIZE}"
